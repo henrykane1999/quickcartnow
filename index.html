@@ -521,61 +521,6 @@ a,button{font-family:inherit;cursor:pointer;text-decoration:none;}img{display:bl
   .nl-popup{right:12px;left:12px;width:auto;bottom:80px;}
 }
 
-
-/* ═══════════════════════════════════════════
-   MODERN DESIGN OVERHAUL — Typography, Cards, Layout
-═══════════════════════════════════════════ */
-
-/* ── TYPOGRAPHY SCALE ── */
-h1,h2,h3,h4,h5{font-family:var(--font-display);font-weight:700;letter-spacing:-.03em;line-height:1.15;}
-p{line-height:1.6;}
-
-/* ── LOGO refined ── */
-.logo{font-family:var(--font-display);font-size:24px;font-weight:800;letter-spacing:-.05em;}
-.logo span{color:var(--orange);}
-
-/* ── NAV LINKS refined ── */
-.nl{font-size:13px;font-weight:500;letter-spacing:-.01em;border-radius:8px;padding:6px 12px;}
-.nl.on{font-weight:600;background:var(--orange-soft);color:var(--orange);}
-
-/* ── DEAL CARDS — full modern redesign ── */
-.dcard{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;
-  transition:transform .22s cubic-bezier(.34,1.56,.64,1), box-shadow .22s ease, border-color .22s ease;
-  position:relative;display:flex;flex-direction:column;}
-.dcard:hover{transform:translateY(-3px) scale(1.005);box-shadow:0 12px 40px rgba(0,0,0,.1);border-color:#d0cec8;}
-.dcard-img-wrap{position:relative;background:#f8f7f5;overflow:hidden;aspect-ratio:4/3;}
-.dcard-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .3s ease;}
-.dcard:hover .dcard-img-wrap img{transform:scale(1.04);}
-.dcard-body{padding:14px 14px 10px;flex:1;display:flex;flex-direction:column;gap:4px;}
-.dcard-store{font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);}
-.dcard-name{font-size:13px;font-weight:600;line-height:1.4;color:var(--ink);letter-spacing:-.01em;}
-.dcard-price{font-family:var(--font-mono);font-size:20px;font-weight:500;color:var(--ink);letter-spacing:-.03em;margin-top:2px;}
-.dcard-orig{font-family:var(--font-mono);font-size:11px;color:var(--ink4);text-decoration:line-through;margin-left:4px;}
-.dcard-save{font-size:10px;font-weight:700;background:var(--orange);color:#fff;border-radius:4px;padding:2px 6px;letter-spacing:.02em;}
-.dcard-footer{padding:10px 14px 14px;display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--border);}
-
-/* ── ACTION BUTTONS on cards ── */
-.view-btn{display:block;width:100%;text-align:center;border:none;border-radius:8px;
-  padding:11px;font-size:12px;font-weight:600;letter-spacing:.01em;
-  background:var(--ink);color:#fff;transition:.15s;cursor:pointer;
-  font-family:var(--font-body);}
-.view-btn:hover{background:#222;box-shadow:0 4px 12px rgba(0,0,0,.2);}
-.view-btn.na{background:var(--border);color:var(--ink3);cursor:default;}
-
-.share-btn,.alert-btn,.wish-btn,.compare-add-btn{
-  font-size:11px;font-weight:600;border:1px solid var(--border);
-  border-radius:7px;padding:5px 10px;cursor:pointer;
-  background:transparent;color:var(--ink2);transition:.15s;
-  font-family:var(--font-body);}
-.share-btn:hover,.alert-btn:hover{background:var(--bg);border-color:var(--border2);}
-
-/* ── VOTE BUTTON ── */
-.vote-btn{font-size:11px;font-weight:700;border:1px solid var(--border);border-radius:7px;
-  padding:5px 10px;cursor:pointer;background:transparent;color:var(--ink3);
-  transition:.15s;font-family:var(--font-body);}
-.vote-btn:hover{border-color:var(--orange);color:var(--orange);}
-.vote-btn.voted{background:var(--orange-soft);border-color:var(--orange);color:var(--orange);}
-
 /* ── TAGS & BADGES ── */
 .tag{font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
   padding:3px 8px;border-radius:5px;position:absolute;top:10px;left:10px;z-index:5;}
